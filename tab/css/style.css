@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+/* UI Object */
+#wrap{width:1000px;margin:0 auto;text-align:left}
+#header{width:100%}
+#container{display:inline-block;width:100%}
+#container:after{display:block;clear:both;content:''}
+#content{float:left;width:760px}
+.aside{float:right;width:170px;margin-left: 10px}
+#footer{width:100%}
+
+/* Layout Color - 실제 서비스 적용 후 아래 코드는 삭제 하세요 */
+#wrab div{margin:0 0 10px;padding:10px 0;color:#2d2c2d;font-family:Tahoma;font-size:14px;font-weight:bold}
+#wrap{border:1px solid #bdbdbd;background:#f7f7f7;}
+#header{margin-top:10px}
+#header,#container{position:relative;padding:15px;*padding:10px;border:2px solid #bfbfbf;background:#e5e5e5}
+#header,#container{width:auto}
+.aside,#content{position:relative;margin-top:10px;border:1px solid #bdbdbd;background:#fff;text-align:center}
+#content{text-align: left;font-size: 12px;padding: 10px}
+#footer{width:auto;padding:10px;border:2px solid #bfbfbf;background:#e5e5e5}
+/* //UI Object */
+
+.u_skip{position:relative}
+.u_skip a{position:absolute;top:-30px;left:0;width:138px;border:1px solid #4ec53d;background:#333;text-align:center}
+.u_skip a:active,.u_skip a:focus{top:0;z-index:1000;text-decoration:none}
+.u_skip span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
+
+
+
+/*가이드*/
+.guide_tit{margin-top: 5px; margin-bottom: 5px}
+
+/*텝요소*/
+.tab_wrap .tab_tit{overflow: hidden;}
+.tab_wrap .tab_tit li{float: left;}
+.tab_wrap .tab_tit li a{display: block;padding: 10px 10px 5px 10px;margin-right: 1px;color: #fff;text-align: center;background: blue;text-decoration: none}
+.tab_wrap .tab_tit li.active a{background: red}
+.tab_wrap .tab_cts{display: none;}
+.tab_wrap .tab_cts.active{display: block; }
+/* //텝요소*/
+
+/*아코디언*/
+.accodian dt a{background: #ccc;padding: 10px;display: block;border-bottom: 1px solid #fff}
+.accodian dt.active{display: block}
+.accodian dd{background: #666;padding: 10px;color: #fff;display:none;height: 100px}
+.accodian dd.active{display: block}  
+/* //아코디언*/
+
+/*팝업*/
+.layer_pop{position: relative;display: none;left: 50%; max-width: 800px; height: 400px; position: fixed;top: 0;margin: 20px;padding: 20px; width:500px;color: #fff; background: blue;overflow: hidden}
+.layer_pop .cls{position: absolute;top: 20px;right: 20px;width: 50px;height: 50px;background: #fff;color: #000}
+.dim .tdim{width: 100%;height: 100%;}
+/* //팝업*/
+
+
+/* //가이드*/

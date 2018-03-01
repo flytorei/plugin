@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="ie9"><![endif]-->
+<!--[if !IE]><-->
+<html lang="ko">
+
+<head>
+    <title>Bootstrap 101 Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 부트스트랩 -->
+    <link href="../bootstrap/css/bootstrap-ko.min.css" rel="stylesheet" media="screen">
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/slick.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="s/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="header">
+
+        </div>
+
+        <div id="contents">
+            <div class="container">
+                <div class="section">
+                    <p class="exam">exam 1</p>
+                    <div class="exam01">
+                        <div class="slick">
+                            <div>
+                                <h3>1</h3></div>
+                            <div>
+                                <h3>2</h3></div>
+                            <div>
+                                <h3>3</h3></div>
+                            <div>
+                                <h3>4</h3></div>
+                            <div>
+                                <h3>5</h3></div>
+                            <div>
+                                <h3>6</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="exam">exam 2</p>
+                    <div class="exam02">
+                        <div class="slick">
+                            <div>
+                                <h3>1</h3></div>
+                            <div>
+                                <h3>2</h3></div>
+                            <div>
+                                <h3>3</h3></div>
+                            <div>
+                                <h3>4</h3></div>
+                            <div>
+                                <h3>5</h3></div>
+                            <div>
+                                <h3>6</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="exam">exam 3</p>
+                    <div class="exam03">
+                        <div class="slick">
+                            <div>
+                                <h3>1</h3></div>
+                            <div>
+                                <h3>2</h3></div>
+                            <div>
+                                <h3>3</h3></div>
+                            <div>
+                                <h3>4</h3></div>
+                            <div>
+                                <h3>5</h3></div>
+                            <div>
+                                <h3>6</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <p class="exam">exam 4</p>
+                    <div class="exam04">
+                        <div class="slick slider-for">
+                            <div>
+                                <h3>1</h3></div>
+                            <div>
+                                <h3>2</h3></div>
+                            <div>
+                                <h3>3</h3></div>
+                            <div>
+                                <h3>4</h3></div>
+                            <div>
+                                <h3>5</h3></div>
+                        </div>
+                        <div class="slick slider-nav">
+                            <div>
+                                <h3>1</h3></div>
+                            <div>
+                                <h3>2</h3></div>
+                            <div>
+                                <h3>3</h3></div>
+                            <div>
+                                <h3>4</h3></div>
+                            <div>
+                                <h3>5</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="foot">
+
+            </div>
+        </div>
+
+        <!-- /container -->
+        <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
+        <script src="../bootstrap/js/jquery-1.11.1.min.js"></script>
+        <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <!-- Respond.js 으로 IE8 에서 반응형 기능을 활성화하세요 (https://github.com/scottjehl/Respond) -->
+        <script src="../js/respond.js"></script>
+        <!-- 플러그 인 -->
+        <script src="../js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.exam01 .slick').slick();
+
+                $('.exam02 .slick').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                });
+
+                $('.exam03 .slick').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+
+                $('.exam04 .slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.slider-nav'
+                });
+                $('.exam04 .slider-nav').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.slider-for',
+                    dots: true,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
+
+
+            });
+        </script>
+</body>
+
+</html>
